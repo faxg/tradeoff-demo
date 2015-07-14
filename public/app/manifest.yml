@@ -4,4 +4,8 @@ applications:
   memory: 256M
   command: node node_modules/node-red/red.js --settings ./bluemix-settings.js
   services:
+<<<<<<< Upstream, based on 4d55e8db20ac7a1899d63855649a840142fc9ebb
   - watson-node-knime:cloudantNoSQLDB
+=======
+  - watson-node-knime:CloudantDB
+>>>>>>> ed15e86 Added manifest.yml to /public/app

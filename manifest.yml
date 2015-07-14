@@ -1,7 +1,5 @@
 ---
 applications:
-- name: nr-fred
-  memory: 256M
-  command: node node_modules/node-red/red.js --settings ./bluemix-settings.js
-  services:
-  - nr-fred:cloudantNoSQLDB
+- name: node-red-template
+  memory: 128M
+  command: node app.js
