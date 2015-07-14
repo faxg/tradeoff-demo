@@ -1,7 +1,7 @@
 ---
 applications:
-- name: nr-fred
+- name: watson-node-knime
   memory: 256M
   command: node node_modules/node-red/red.js --settings ./bluemix-settings.js
   services:
-  - nr-fred:cloudantNoSQLDB
+  - watson-node-knime:cloudantNoSQLDB
