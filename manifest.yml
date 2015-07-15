@@ -1,5 +1,10 @@
 ---
 applications:
-- name: node-red-template
-  memory: 128M
-  command: node app.js
+- name: watson-node-knime
+  memory: 256M
+  command: node ./app/node_modules/node-red/red.js --settings ./app/bluemix-settings.js
+  services:
+  - watson-node-knime:CloudantDB
+  - watson-node-knime:MobileSecurity
+  - watson-node-knime:MobileData
+  - watson-node-knime:MobilePush
